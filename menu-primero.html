@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu principal</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("fondo2.jpg");
+}
+
+.registro {
+    width: 500px;
+    background: #24303c;
+    padding: 40px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: "calibri, arial";
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+h4{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: rgb(241, 187, 9);
+
+}
+h5{
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+p{
+    font-size: 18px;
+    margin: 4px;
+    text-align: justify;
+}
+
+.controls{
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: "calibri, arial";
+    font-size: 18px;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+    <form action="" class="registro">
+        <h4>Servicio de Paqueteria</h4>
+        <p>Escoje la opcion que mas se apegue a tus necesidades, si deseas enviar un paquete escoje la opcion de 
+        <strong>me se el peso (si es que te sabes el peso)</strong> o <strong>no me se el peso(si no te sabes el peso )</strong>
+        </p>
+        <h5>Escoge una de las opciones.</h5>
+        <select id="opcion" class="controls">
+            <option value="1">Paquete. Me se el peso</option>
+            <option value="2">Paquete. No me se el peso</option>
+            <option selected value="3">Documento </option>
+            <input type="button" value="Validar" onclick="val();" class="controls">
+        </select>
+    </form>
+
+    <script>
+        function val (){
+            var opciones= document.getElementById("opcion");
+            if (opciones.value==1) {
+                location="sipeso.html"
+            }
+            if (opciones.value==2) {
+                location="nopeso.html"
+            }
+            if (opciones.value==3) {
+                location="Documen.html"
+            }
+  
+        }
+    </script>
+</body>
+</html>
