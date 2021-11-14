@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arayys</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgba(45, 165, 235, 0.986);
+            font-family: "calibri, arial";
+            color: white;
+            font-size: 25px;
+        }
+        h1{
+            font-family: "calibri, arial";
+            font-size: 50px;
+            text-align: center;
+        }
+        .diseño {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: "calibri, arial";
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+        }
+    </style>
+</head>
+<body>
+    <form action="" class="diseño">
+    <h1>DIAS DE LA SEMANA</h1>
+
+
+    <script>
+        var dias=["Lunes", "Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"];
+        var numerodias = dias.length-1;
+        var i=0;
+        while (i<=numerodias){
+            document.write(dias[i]+ "<br>");
+            i++;
+        }
+
+    </script>
+    </form>
+</body>
+</html>

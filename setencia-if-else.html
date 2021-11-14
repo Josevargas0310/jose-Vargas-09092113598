@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setencia If-Else</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(111, 252, 153);
+        }
+        .registro{
+            width: 400px;
+            background: red;
+            padding: 30px;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 4px;
+            font-family: "arial, calibri";
+            color: white
+        }
+        h1{
+            font-size: 50px;
+            text-align: center;
+            color:rgb(25, 91, 233);
+        }
+
+        p{
+            text-align: justify;
+            font-size: 25px;
+            color: rgb(245, 164, 58);
+            margin: 3%;
+        }
+        .registro h4{
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        .texto{
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            font-family: "arial, calibri";
+            font-size: 18px;
+        }
+        .boton{
+            width: 30%;
+            border: none;
+            padding: 10px;
+            margin: 1px;
+            font-size: 15px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Bar Mar y Disco</h1>
+        <p>Bienvenido a la discoteca donde te la psaras muy bien con barra libre y diversion en grande, por motivos de normas de la empresa solo
+            le podemos vender entradas a mayores de edad.  </p>
+    <form action="" class=" registro">
+    <h4>Ingrese su edad </h4>
+        <input class="texto" type="number" name="años" id="" placeholder="Ingrese la edad que tiene">
+        <input class="boton" type="button" value="Enviar" onclick="edad(this.form)">
+    </form>
+
+    <script>
+        function edad (form){
+            if(form.años.value >= "18"){
+                alert("Bienvenido a la compra de boletos");
+            } else{
+             alert("Eres menor de edad no puedes entrar");
+            }
+        }
+    </script>
+</body>
+</html>

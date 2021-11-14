@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setencia switch</title>
+    <style> 
+        *{
+            padding: 0;
+            border: 0;
+
+        }
+        body{
+            background-color:black;
+            text-align: center;
+            color: yellow;
+        }
+        .boton{
+            padding: 25px;
+            font-size: 20px;
+        }
+        
+    </style>
+    
+</head>
+<body> <!--inicio del Html -->
+    <h1>Setencia Switvh </h1>
+    <h2>Seleccione un dia de la semana</h2>
+    <button class="boton" onclick="diasSemana(1)">1</button>
+    <button class="boton" onclick="diasSemana(2)">2 </button>
+    <button class="boton"  onclick="diasSemana(3)">3</button>
+    <button class="boton"  onclick="diasSemana(4)">4</button>
+    <button class="boton"  onclick="diasSemana(5)">5</button>
+    <button class="boton"  onclick="diasSemana(6)">6</button>
+    <button class="boton"  onclick="diasSemana(7)">7</button>
+    <button class="boton"  onclick="diasSemana(8)">8</button>
+
+    <script>  // inicio de javascript 
+        function diasSemana(dias) {
+            switch(dias){
+                case 1:
+                alert("el dia es lunes");
+                break;
+                case 2:
+                alert("el dia es martes");
+                break;
+                case 3:
+                alert("el dia es miercoles");
+                break;
+                case 4:
+                alert("el dia es jueves");
+                break;
+                case 5:
+                alert("el dia es es viernes");
+                break;
+                case 6:
+                alert("el dia es sabado ");
+                break;
+                case 7:
+                alert("el dia es domingo");
+                break;
+                default:
+                    alert ("la semana solo tiene 7 dias, dia seleccionado inexistente");
+            }
+        }
+    </script>
+</body>
+</html>
